@@ -148,7 +148,7 @@ export default function ChatInterface({ sessionId }: ChatInterfaceProps) {
       {/* Input Area */}
       <form
         onSubmit={sendMessage}
-        className="p-4 border-t border-slate-100 flex gap-2"
+        className="p-4 border-t border-slate-100 flex gap-2 text-gray-900"
       >
         <input
           value={input}

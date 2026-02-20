@@ -67,10 +67,10 @@ npm run dev
 
 ## Environment Variables
 
-| Variable | Required | Description |
-|---|---|---|
-| MONGODB_URI | Yes | MongoDB connection URI used by Mongoose |
-| GEMINI_API_KEY | Yes | Google Gemini API key |
+| Variable       | Required | Description                             |
+| -------------- | -------- | --------------------------------------- |
+| MONGODB_URI    | Yes      | MongoDB connection URI used by Mongoose |
+| GEMINI_API_KEY | Yes      | Google Gemini API key                   |
 
 ## API Reference
 
@@ -98,10 +98,7 @@ Success response (200):
 
 ```json
 {
-  "sessions": [
-    "session_abc123...",
-    "session_xyz789..."
-  ]
+  "sessions": ["session_abc123...", "session_xyz789..."]
 }
 ```
 
@@ -125,9 +122,9 @@ Endpoint:
 
 Query parameters:
 
-| Name | Type | Required | Description |
-|---|---|---|---|
-| sessionId | string | Yes | Chat session identifier |
+| Name      | Type   | Required | Description             |
+| --------- | ------ | -------- | ----------------------- |
+| sessionId | string | Yes      | Chat session identifier |
 
 Success response (200):
 
@@ -177,10 +174,10 @@ Request body:
 
 Request fields:
 
-| Field | Type | Required | Description |
-|---|---|---|---|
-| message | string | Yes | User prompt text |
-| sessionId | string | Yes | Session identifier for context/history |
+| Field     | Type   | Required | Description                            |
+| --------- | ------ | -------- | -------------------------------------- |
+| message   | string | Yes      | User prompt text                       |
+| sessionId | string | Yes      | Session identifier for context/history |
 
 Success response (200):
 
